@@ -1,0 +1,396 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/homedecor.css' %}">
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+    <title>LifeDise | Homedecor</title>
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header" class="shadow bg-light">
+  <nav class="container navbar">
+      <a href="homedecor.html" class="nav-brand text-dark">
+          Home Decor
+      </a>
+
+      <!-- toggle button -->
+      <button class="toggle-button">
+          <span><i class="fas fa-bars"></i></span>
+      </button>
+
+      <!-- collapse on toggle button click -->
+      <div class="collapse">
+          <ul class="navbar-nav">
+              <a href="index" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Blog</a>
+              <a href="#" class="nav-link">Pages</a>
+              <a href="#" class="nav-link">Categories</a>
+              <a href="aboutus" class="nav-link">About</a>
+              <a href="contact" class="nav-link">Contact</a>
+          </ul>
+      </div>
+
+      <!-- collapse on toggle button click -->
+      <div class="collapse">
+          <ul class="navbar-nav">
+              <div class="search-box">
+                  <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </div>
+              <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+          </ul>
+      </div>
+  </nav>
+
+</header>
+<!-- End of Header -->
+
+<!-- Image slider -->
+<div class="content">
+    <div class="images">
+        <img src="{% static 'https://th.bing.com/th/id/OIP.pFX5tG0d3cNtiJC2eMTjAAHaGh?w=244&h=215&c=7&r=0&o=5&pid=1.7.jpeg' %}">
+        <img src="{% static 'https://th.bing.com/th/id/OIP.yKg995QUmezWDmGUr2zuRAHaEK?w=313&h=180&c=7&r=0&o=5&pid=1.7.jpg' %}">
+        <img src="{% static '../static/assets/images/bg3.jpeg' %}">
+        <img src="{% static 'https://th.bing.com/th/id/OIP.zlZ7gkvGb6E-65VE4DmnKQHaEX?w=322&h=190&c=7&r=0&o=5&pid=1.7' %}">
+        <img src="{% static 'https://www.idooutlet.com/wp-content/uploads/2017/03/ido-showroom-outdoor-furniture-demo-01-2.jpg' %}">
+    </div>
+    </div>
+
+<!-- Across the home  -->
+<h1 class="title2" style="padding-left:50px;">Across the home</h1>
+
+<div class="cards">
+    <div class="column1" >
+        <h2 >Living room</h2>
+    </div>
+    <div class="column2" >
+        <h2>Kitchen</h2>
+    </div>
+    <div class="column3" >
+        <h2>Bathroom</h2>
+    </div>
+    <div class="column4" >
+        <h2>Bedroom</h2>
+    </div>
+</div>
+<!-- End of Across the home  -->
+
+<div class="photoo">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <h1>Lorem Ipsum<br> dolor sit amet</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore laborum error <br>labor explicabo necessitatibus quaerat doloremque nisi voluptatem mollitia beatae<br> laudantium, culpa id quisquam, doloribus earum reiciendis velit natus. Atque?</p>
+                <a href="" class="btn" >Explore more</a>
+            </div>
+            <div class="col-2">
+                <img src="../static/assets/images/1.jpeg">
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- DIY  -->
+<h1 class="title2" style="padding-left:50px;">DIY Do it Yourself</h1>
+
+<div class="cards">
+    <div class="column5" >
+        <h2 >Breakfast Recipes</h2>
+    </div>
+    <div class="column6" >
+        <h2>Lunch Recipes</h2>
+    </div>
+    <div class="column7" >
+        <h2>Dinner Recipes</h2>
+    </div>
+    <div class="column8" >
+        <h2>Desserts</h2>
+    </div>
+</div>
+<!--End of DIY  -->
+<h2 class="title2">Blogs</h1>
+<!-- Main Site -->
+<main id="site-main">
+
+    <!-- Blog Post Section -->
+    <section id="posts">
+        <div class="container">
+            <div class="grid">
+
+                <!-- article -->
+                    <div class="grid-item" onclick="location.href='foodarticle.html'">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow-img">
+                                    <a href="#">
+                                        <img src="https://media.istockphoto.com/photos/top-view-table-full-of-food-picture-id1220017909?b=1&k=20&m=1220017909&s=170667a&w=0&h=Kjdsgm1tUOVBDuP060hGA9kR_OHNr7_4HfnCFrdkmhw=" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body text-center px-1">
+                                    <a href="#" class="text-title display-1 text-dark">
+                                        Looking for some feedback for this rejected track
+                                        technology
+                                    </a>
+                                    <p class="secondary-title text-secondary display-3">
+                                        <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                        <span><i class="far fa-comments text-primary"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                <!-- .article -->
+
+                <!-- article -->
+                    <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://w0.peakpx.com/wallpaper/805/956/HD-wallpaper-food-delicious-food-food-holidays-indian-indian-food-pav-bhaji-spicy-food-street-food.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://ireallylikefood.com/wp-content/uploads/2020/03/easy-breakfast-sides-1200x800.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1608506169128-S6KYNEV61LEP5MS1UIH4/traditional-food-around-the-world-Travlinmad.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/6ZImCEzx6UuvuKaAiZEDDN/50479ee4a0902deb4eb1bab720ce248a/image1.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1608506169128-S6KYNEV61LEP5MS1UIH4/traditional-food-around-the-world-Travlinmad.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://www.teahub.io/photos/full/19-191863_2048x1352-amazing-food-desktop-wallpaper-full-size-restaurant.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvmOTDINf2cL12g1mQaHWoxlINzRQHZ2Ur5vpC8yqRJrBfGLJ7131whcwaxBMKDdY7iA&usqp=CAU" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary secondary-title text-light">Load More Posts...</button>
+            </div>
+        </div>
+    </section>
+<!-- .Blog Post Section -->
+
+</main>
+
+<!-- Style it up -->
+
+<h1 class="title2" style="padding-left:50px;">Let's Style it Up</h1>
+
+
+
+<div class="cards">
+    <div class="column9" >
+        <h2>Vases</h2>
+    </div>
+    <div class="column10 " >
+        <h2>Wall Accents</h2>
+    </div>
+    <div class="column11" >
+        <h2>Clocks</h2>
+    </div>
+    <div class="column12" >
+        <h2>Paintings</h2>
+    </div>
+</div>
+
+<!-- End of style it up  -->
+    
+<!---footer starts-->
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About us</h2>
+            <a href="{% static '#' %}">Blog</a>
+            <a href="{% static '#' %}">customers</a>
+            <a href="{% static '#' %}">terms of service</a>
+        </div>
+      
+        <div class="footer-heading footer-3">
+            <h2>Follow us on</h2>
+            <a href="{% static '#' %}" class="fa fa-facebook   ">  Facebook</a>  
+            <a href="{% static '#' %}" class="fa fa-instagram   "> instagram</a>
+            <a href="{% static '#' %}" class="fa fa-twitter  ">    Twitter</a>
+            <a href="{% static '#' %}" class="fa fa-pinterest ">   pinterest</a>  
+            <a href="{% static '#' %}" class="fa fa-linkedin  ">   linkedin</a>  
+            <a href="{% static '#' %}" class="fa fa-youtube  ">    youtube</a>  
+            <a href="{% static '#' %}" class="fa fa-google   ">    google</a>  
+            
+        </div>
+        <div class="footer-email-form">
+            <h3>Join our newsletter</h3>
+            <input type="email" placeholder="enter your email address" id="footer-email">
+            <input type="Submit" value="Signup" id="footer-email-btn">
+        </div>
+  </div>
+</div>
+
+<!----footer end-->
+
+ <!-- masonry libray for horizontal grid -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+
+ <!-- swiper slider cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+
+ <!-- custom javascript main.js file -->
+ <script src="{% static 'assets/js/main4.js' %}"></script>
+
+</body>
+</html>

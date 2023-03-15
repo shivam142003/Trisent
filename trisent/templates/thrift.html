@@ -1,0 +1,371 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIS_ENT | Thrift Store</title>
+    <link rel="stylesheet" href="{% static 'assets/css/store.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Header -->
+<header id="header" class="shadow bg-light">
+    <nav class="container navbar">
+        <a href="thrift.html" class="nav-brand text-dark">
+            Thrift Store
+        </a>
+  
+        <!-- toggle button -->
+        <button class="toggle-button">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+  
+        <!-- collapse on toggle button click -->
+        <div class="collapse">
+            <ul class="navbar-nav">
+                <a href="{ static 'index.html' %}" class="nav-link">Home</a>
+                <a href="#{ static 'chead' %}" class="nav-link">Categories</a>
+                <a href="#{ static 'offers' %}" class="nav-link">Offers</a>
+                <a href="#{ static 'testimonial' %}" class="nav-link">Testimonials</a>
+                <a href="{ static 'aboutus.html' %}" class="nav-link">About</a>
+                <a href="{ static 'contact.html' %}" class="nav-link">Contact</a>
+            </ul>
+        </div>
+  
+        <!-- collapse on toggle button click -->
+        <div class="collapse">
+            <ul class="navbar-nav">
+                <div class="search-box">
+                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                </div>
+                <a href="{% static '#' %}" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="{% static '#' %}" class="nav-link"><i class="fab fa-twitter"></i></a>
+                <a href="{% static '#' %}" class="nav-link"><i class="fab fa-instagram"></i></a>
+                <a href="{% static '#' %}" class="nav-link"><i class="fab fa-youtube"></i></a>
+            </ul>
+        </div>
+    </nav>
+
+  </header>
+  <!-- End of Header -->
+
+    <div class="buy">
+    <h2 class="buy1">BUY.<br>SELL.<br>SHOP.<br>EXPLORE.</h2>
+    </div>
+
+    <h2 class="deals">SHOP BY DEALS</h2>
+    <div class="circle">
+        <div id="one">
+          <h2 id="under"> UNDER<br> $10</h2>
+        </div>
+
+        <div id="two">
+            <h2 id="under">  UNDER <br>$200</h2>
+        </div>
+
+        <div id="three">
+            <h2 id="under">  UNDER<br> $500</h2>
+            </div>
+
+        <div id="four">
+            <h2 id="under">  UNDER<br> $1000</h2>
+                </div>
+
+        <div id="five">
+            <h2 id="under"> UNDER<br> $1500</h2>
+                    </div>
+
+        <div id="six">
+            <h2 id="under">UNDER<br> $2500</h2>
+               </div>
+        
+    </div>
+    <h2 id="chead" class="Chead">SHOP AND SELL BY CATEGORIES</h2>
+   <div class="categ">
+       <div class="col1">
+           <h2 class="ha">Tops & T-Shirts</h2>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQsEsCMZn9tFuQ9mbe-5IoXIJenSQSV46mfqKh_20yWlqvSsYrNA-q4YPSmn_0_QSLES8&usqp=CAU" id="im1">
+           <h2 class="hb">Dresses</h2>
+           <img src="https://www.thespruce.com/thmb/C40zkQAdm6bfDAwcA4KdEmfVGnQ=/3000x1687/smart/filters:no_upscale()/storing-your-clothes-without-a-closet-2648456-001-cfe0a333273b4b66a56ce1e65e7a9643.jpg" id="im1">
+        </div>
+
+        <div class="col2">
+            <h2 class="ha">Accesssories</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmwq4HlNCEyy-ssPjurRWqrAFo1V-CR6vUvpmw2uHaNTGfUt8RaTBJnCI8V-jCJBKGNqA&usqp=CAU" id="im1">
+            <h2 class="hb">Bags</h2>
+            <img src="https://pyxis.nymag.com/v1/imgs/115/c42/6378afdef5add8c326cf07069923c17d30-TheCut-Prada-094.rvertical.w570.jpg" id="im1">
+         </div>
+       </div>
+
+       <div class="col3">
+        <h2 class="ha">Footwear</h2>
+        <img src="https://content3.jdmagicbox.com/comp/def_content/shoe_dealers/default-shoe-dealers-1.jpg?clr=3f3f27" id="im1">
+        <h2 class="hb">Kurtas</h2>
+        <img src="https://d392p56yqvuqpz.cloudfront.net/img/kurti1.png" id="im1">
+       </div>
+   </div>
+   <div class="Sell">
+    <div class="Sell1">
+        <h2 id="Way">SELL YOUR WAY</h2>
+        <p id="w1">Find best deals to sell <br>your product at best price.</p>
+        <button id="btnR">Read More</button>
+    </div>
+    <img src="https://mensopedia.com/wp-content/uploads/2019/08/10-Top-Male-Models-In-The-World.jpg" id="fimg">
+   </div>
+
+   <div class="products">
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row" >
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="../images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="../images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="../static/assets/images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            
+        </div>
+    
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            <div class="col-4" onclick="location.href='product.html'">
+                <img src="images/Art1.jpg">
+                <h4>Name of product</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <p>INR 400.00</p>
+            </div>
+            
+        </div>
+    </div>
+</div>  
+
+<div id="offers" class="header">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/1.jpg">
+            </div>
+            <div class="col-2">
+                <p>Exclusively availaible on our store</p>
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore laborum error <br>labor explicabo necessitatibus quaerat doloremque nisi voluptatem mollitia beatae<br> laudantium, culpa id quisquam, doloribus earum reiciendis velit natus. Atque?</p>
+                <a href="{% static 'product.html' %}" class="btn" >Buy now</a>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<div id="testimonial" class="testimonial">
+    <h2 class="title">Testimonials</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, repellat quaerat. Inventore nemo ipsa delectus, harum ducimus pariatur repellendus ex suscipit. Distinctio adipisci cum laborum vitae. Sequi nostrum suscipit dignissimos.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <img src="images/Cimg.jpg">
+                <h3> Sean Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, repellat quaerat. Inventore nemo ipsa delectus, harum ducimus pariatur repellendus ex suscipit. Distinctio adipisci cum laborum vitae. Sequi nostrum suscipit dignissimos.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <img src="../images/Cimg.jpg">
+                <h3> Sean Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, repellat quaerat. Inventore nemo ipsa delectus, harum ducimus pariatur repellendus ex suscipit. Distinctio adipisci cum laborum vitae. Sequi nostrum suscipit dignissimos.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half" ></i>
+                </div>
+                <img src="../images/Cimg.jpg">
+                <h3> Sean Parker</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---footer starts-->
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About us</h2>
+            <a href="{% static '#' %}">Blog</a>
+            <a href="{% static '#' %}">customers</a>
+            <a href="{% static '#' %}">terms of service</a>
+        </div>
+      
+        <div class="footer-heading footer-3">
+            <h2>Follow us on</h2>
+            <a href="{% static '#' %}" class="fa fa-facebook   ">  Facebook</a>  
+            <a href="{% static '#' %}" class="fa fa-instagram   "> instagram</a>
+            <a href="{% static '#' %}" class="fa fa-twitter  ">    Twitter</a>
+            <a href="{% static '#' %}" class="fa fa-pinterest ">   pinterest</a>  
+            <a href="{% static '#' %}" class="fa fa-linkedin  ">   linkedin</a>  
+            <a href="{% static '#' %}" class="fa fa-youtube  ">    youtube</a>  
+            <a href="{% static '#' %}" class="fa fa-google   ">    google</a>  
+            
+        </div>
+        <div class="footer-email-form">
+            <h3>Join our newsletter</h3>
+            <input type="email" placeholder="enter your email address" id="footer-email">
+            <input type="Submit" value="Signup" id="footer-email-btn">
+        </div>
+  </div>
+</div>
+
+<!----footer end-->
+</body>
+</html>

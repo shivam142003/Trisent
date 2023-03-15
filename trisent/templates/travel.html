@@ -1,0 +1,290 @@
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Travel.css' %}">
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+    <title>TRIS_ENT | Travel</title>
+
+
+    <script type="text/javascript">
+        var arr = [];
+        arr[0]= new Image();
+        arr[0].src= "https://content-airtreks.com/interest-group/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/sites/2/2019/12/Traveling-for-a-Year-or-More-header-1650x850.jpg.webp";
+
+        arr[1]= new Image();
+        arr[1].src = "https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg";
+
+        arr[2]= new Image();
+        arr[2].src = "https://i2-prod.mirror.co.uk/incoming/article11117282.ece/ALTERNATES/r500/0_Croatia-Dalmatia-Dubrovnik-Old-Town.jpg";
+
+        var i=0;
+
+        function slide(){
+            document.getElementById("image1").src= arr[i].src;
+            i++;
+            if(i==arr.length)
+            { 
+            i=0;
+            }
+            setTimeout(function(){ slide(); },2000);
+        }
+    </script>
+</head>
+
+<!-- Header -->
+    <header id="header" class="shadow bg-light">
+    <nav class="container navbar">
+        <a href="travel.html" class="nav-brand text-dark">
+                TRAVEL
+            </a>
+
+            <!-- toggle button -->
+            <button class="toggle-button">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- collapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#posts" class="nav-link">Blog</a>
+                    <a href="#dest" class="nav-link">Pages</a>
+                    <a href="#trip" class="nav-link">Categories</a>
+                    <a href="aboutus.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </ul>
+            </div>
+
+            <!-- collapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                        <div class="search-box">
+                            <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                        </div>
+                        <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+                </ul>
+            </div>
+    </nav>
+</header>
+<!-- .Header -->
+
+<body onLoad="slide('image1',arr);">
+<div id="img">
+<img id="image1" height="400px" width="100%" />
+</div>
+
+<br>
+<br>
+<div class="S1">
+<form class="example" >
+<input type="text" placeholder="Search.." name="search" id="ip1">
+<button type="submit" id="sb1"><i class="fa fa-search"></i></button>
+
+</form>
+</div>
+
+    <p id="Quote1">"Explore the wonders of the world."</p>
+
+
+
+<h3 id="dest">POPULAR DESTINATIONS</h3>
+
+<div class="wrapper">
+<div class="carousel owl-carousel">
+    
+    <div class="card card-2">
+        <img src="https://i.insider.com/556e02d6ecad04f57bb23cfe?width=1200&format=jpeg" id="i1">
+        <p>TAJ MAHAL</p>
+    </div>
+    <div class="card card-3">
+        <img src="https://www.usnews.com/dims4/USNEWS/22c54a0/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F93%2F08%2F63d7674d439ca41b4d9a312f0e9f%2F2-giza-getty.jpg" id="i1"> 
+        <p>EGYPT</p>
+    </div>
+    <div class="card card-4">
+        <img src="https://loveincorporated.blob.core.windows.net/contentimages/gallery/99c34c71-e1f1-4463-8d18-b36770fbcae8-popular-tourist-destinations-during-lockdown.jpg" id="i1">
+        <p>THAILAND</p>
+    </div>
+    <div class="card card-5">
+        <img src="https://www.holidify.com/images/bgImages/PARIS.jpg" id="i1">
+        <p>EIFFEL TOWER</p>
+    </div>
+    <div class="card card-6">
+        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/09/Alappuzha-Venice.jpg" id="i1">
+        <p>FOREST</p>
+    </div>
+</div>
+</div>
+<script>
+$(".carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+    0:{
+        items:1,
+        nav: false
+    },
+    600:{
+        items:2,
+        nav: false
+    },
+    1000:{
+        items:3,
+        nav: false
+    }
+    }
+});
+</script>
+<div class="AlignedImg">
+
+<div class = "Tour">
+<img id="im1" src ="../static/assets/images/Timg.jpg">
+</div>
+
+
+<div class = "Clean">
+<img id="im1" src="../static/assets/images/TC.jpg" >
+<p id="AlText">"Life is Short" <br>"World is wide"</p>
+</div>
+
+
+
+<div class = "Beauty">
+<img id="im1" src="../static/assets/images/Tbeauty.jpg">
+</div>
+
+
+<h3 class = "trip" id="trip">Plan Your Trip</h3>
+<ul class = "Travel">
+<li class="item-a">
+    <div class="box">
+        <div class = "slide-img">
+            <img src="../static/assets/images/travel.jpg" alt="1">
+            <figcaption>Travel Information</figcaption>
+            </div>
+        </div>
+</li>
+
+<li class="item-b">
+    <div class="box">
+        <div class = "slide-img">
+            
+                <img src="../static/assets/images/Travel1.jpg" alt="2">
+                <figcaption>Accomodation</figcaption>
+                
+                </div>
+        </div>
+</li>
+
+<li class="item-a">
+    <div class="box">
+        <div class = "slide-img">
+            
+                <img src="../static/assets/images/Travel2.jpg" alt="3">
+                <figcaption>Crusie</figcaption>
+                
+                </div>
+        </div>
+</li>
+
+<li class="item-a">
+    <div class="box">
+        <div class = "slide-img">
+            
+                <img src="../static/assets/images/Travel3.jpg" alt="4">
+                <figcaption>Weather</figcaption>
+                
+                </div>
+        </div>
+</li>
+
+<li class="item-a">
+    <div class="box">
+        <div class = "slide-img">
+            
+                <img src="../static/assets/images/Travel4.jpg" alt="5">
+                <figcaption>Healthcare Facilities</figcaption>
+                
+                </div>
+        </div>
+</li>
+
+<li class="item-a">
+    <div class="box">
+        <div class = "slide-img">
+            
+                <img src="../static/assets/images/travel5.jpg" alt="6">
+                <figcaption>Airport Access</figcaption>
+                
+                </div>
+        </div>
+</li>
+</ul>
+
+
+<!-- .Main Site -->
+  <!---footer starts-->
+  <div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About us</h2>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">customers</a>
+            <a href="#">investors</a>
+            <a href="#">terms of service</a>
+            
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>Contact us</h2>
+          <a href="#">Jobs</a>
+          <a href="#">Support</a>
+          <a href="#">contact</a>
+          <a href="#">sponsership</a>
+           
+      </div>
+      <div class="footer-heading footer-3">
+          <h2>Follow us on</h2>
+          <a href="#" class="fa fa-facebook   ">  Facebook</a>  
+          <a href="#" class="fa fa-instagram   "> instagram</a>
+          <a href="#" class="fa fa-twitter  ">    Twitter</a>
+          <a href="#" class="fa fa-pinterest ">   pinterest</a>  
+          <a href="#" class="fa fa-linkedin  ">   linkedin</a>  
+          <a href="#" class="fa fa-youtube  ">    youtube</a>  
+          <a href="#" class="fa fa-google   ">    google</a>  
+          
+      </div>
+      <div class="footer-email-form">
+          <h3>Join our newsletter</h3>
+          <input type="email" placeholder="enter your email address" id="footer-email">
+          <input type="Submit" value="Signup" id="footer-email-btn">
+      </div>
+    </div>
+</div>
+
+
+<!-- masonry libray for horizontal grid -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+
+<!-- swiper slider cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+
+<!-- custom javascript main.js file -->
+<script src="main.js"></script>
+</body>
+
+</html>

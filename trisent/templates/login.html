@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'assets/css/register.css' %}">
+  <title>LOGIN</title>
+</head>
+<body>
+
+</body>
+<style>
+  h4{
+      color:red;
+      justify-content: center;
+  }
+</style>
+{% for message in messages %}
+<h4>{{message}}</h4>
+{% endfor %}
+
+<div class="wrapper">
+  <div class="logo">
+      <img src="./static/assets/images/logo.jpg" width="10%" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      TRIS_ENT
+  </div>
+  <form class="p-3 mt-3" action="login" method="POST">
+      {% csrf_token %}
+      <div class="form-field d-flex align-items-center">
+          <span class="far fa-user"></span>
+          <input type="text" name="username" id="userName" placeholder="username">
+      </div>
+      <div class="form-field d-flex align-items-center">
+          <span class="fas fa-key"></span>
+          <input type="password" name="password" id="pwd" placeholder="password">
+      </div>
+      <button class="btn mt-3">Login</button>
+  </form>
+  <div class="text-center fs-6">
+      <a href="#">Forget password?</a> or <a href="register">Sign up</a>
+  </div>
+</div>

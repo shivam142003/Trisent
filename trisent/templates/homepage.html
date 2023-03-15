@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../static/assets/images/Try-Buy.png">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <title>TRIS_ENT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> 
+    <!-- <script src="{% static 'assets/js/main.js' %}"defer></script> -->
+</head>
+<body>
+<!-- <div class="header1">
+    <h5 class="topbar" >
+        <a href="{% static 'aboutus.html' %}">About |</a>
+        <a href="{% static 'contact.html' %}">Contact</a>
+    </h5>
+
+    <h5 class="topbar right">
+        <a href="{% static 'login.html'  %}">Login |</a>
+        <a href="#">Cart</a>
+    </h5>
+
+    <h1 id="sitename">TRIS_ENT</h1>
+    <h4 id="tagline">Read. Learn. Explore. Shop.</h4>
+
+    <div class="search">
+        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+       </button>
+    </div>
+ 
+    <div class="navbar" id="mynav">
+        <a href="{% static 'homedecor.html' %}">Home decor</a> 
+        <a href="{% static 'food.html' %}">Food</a> 
+        <a href="{% static 'CultureNew.html' %}">Culture and Art</a> 
+        <a href="{% static 'travel.html' %}">Travel</a> 
+        <a href="{% static 'thrift.html' %}">Thrift Store</a>
+    </div>
+</div> -->
+<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            {% if user.is_authenticated %}
+            <a class="nav-link" href="logout">LOGOUT</a>
+            {% else %}
+            <a class="nav-link" href="login">LOGIN</a>
+            {% endif %}
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">CART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">CONTACT</a>
+          </li>
+        </ul>
+        <div id="coo" class="container-fluid">
+            {% if user.is_authenticated %}
+            <h1 id="sitename">Welcome {{user.username}}</h1>
+            {% else %}
+            <h1 id="sitename">TRIS_ENT</h1>
+            {% endif %}
+            <h4 id="tagline">Read. Learn. Explore. Shop.</h4>
+            <a href="food">Food</a> 
+            <a href="CultureNew">Culture and Art</a> 
+            <a href="travel">Travel</a> 
+            <a href="thrift">Thrift Store</a>
+        </div>
+        <div class="w-30 text-center">
+          <form id="search-form" class="d-flex">
+            {% csrf_token %}
+            <input class="form-control me-2" id="search-input" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+          <div id="results-box" class="results-card not-visible"></div>
+        </div>
+      </div>
+    </div>
+</nav> -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="cards">
+        <div class="column1" onclick="location.href='homedecor'">
+            <h2>Home decor</h2>
+        </div>
+        <div class="column2" onclick="location.href='CultureNew'">
+            <h2>Culture and Art</h2>
+        </div>
+        <div class="column3" onclick="location.href='food'">
+            <h2>Food</h2>
+        </div>
+        <div class="column4" onclick="location.href='travel'">
+            <h2>Travel</h2>
+        </div>
+        <div class="column5" onclick="location.href='thrift'">
+          <h2>Thrift Store</h2>
+        </div>
+</div>
+    
+    <h1 id="delight">
+       <b>PRODUCTS WE DELIGHT</b>
+    </h1>
+
+    
+    <ul id="autoWidth" class="cs-hidden">
+        {% for product in p %}
+        <li class="item-a">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="{{product.image.url}}" alt="1">
+        
+                    <div class = "overlay">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="{% static 'product.html' %}">{{product.name}}</a>
+                    </div>
+                    <a href="#" class="price>">Rs{{product.price}}</a>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+<section>
+<div class="container">
+    <video  autoplay muted>
+        <source src="/static/assets/video/home_video_desktop.f44e023b.mp4" type="video/mp4">
+    </video>
+      <!-- <div class="landing-page__main__video-section__center-info">
+        <div class="landing-page__main__video-section__center-info__aside text-small">Zeekit is revolutionizing the way we shop for clothes online.</div>
+        <br>
+        <div class="landing-page__main__video-section__center-info__title">Try It On, Virtually</div>
+      </div> -->
+</div>
+</section>
+
+<h2 id="exptitle">Expert Q & A's</h2>
+<div class="horizontal">
+ <div class="holdingcont">
+  <div class="internalcontB">
+   <img src="https://media.istockphoto.com/photos/top-view-table-full-of-food-picture-id1220017909?b=1&k=20&m=1220017909&s=170667a&w=0&h=Kjdsgm1tUOVBDuP060hGA9kR_OHNr7_4HfnCFrdkmhw=" id="i2">
+    <h3 id="topics">FOOD</h3>
+    <a href="{% static 'foodarticle.html' %}" class="Anslinks">What are the bare minimum fat intake <br>requirements for survival?</a> 
+  </div>
+
+  <div class="internalcontC">
+   <img src="https://www.royservicecenter.com/rc/interior-decoration/wp-content/uploads/sites/5/2019/08/interior_design_01.jpg" id="i3">
+    <h3 id="topics">HOME DECOR</h3>
+    <a href="{% static 'homedecorarticle.html' %}" class="Anslinks">What is the difference between interior <br>architecture ,interior space and interior <br>design?</a>
+  </div>
+
+  <div class="internalcontD">
+   <img src="https://www.researchgate.net/publication/343512175/figure/fig2/AS:921944417390592@1596820086745/Sawdust-Wall-Panels_Q320.jpg" id="i4">
+    <h3 id="topics">HOME DECOR</h3>
+    <a href="{% static 'homedecorarticle.html' %}" class="Anslinks">Sawdust as a sound proof in interior<br> design?</a>
+  </div>
+
+  <div class="internalcontE">
+   <img src="https://www.bellevuelifespring.org/wp-content/uploads/2018/06/Thrift-Culture-Storefront2.jpg" id="i5">
+     <h3 id="topics">THRIFT STORE</h3>
+    <a href="{% static 'thrift.html' %}" class="Anslinks">I live in a small town will I find good stuff<br> at thrift store?</a>
+  </div>
+
+  <div class="internalcontF">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlU0olJrA0ZoyQtZGlLgr15yGkXXDJLdX1nQ&usqp=CAU" id="i6">
+  <h3 id="topics">THRIFT STORE</h3>
+    <a href="{% static 'thrift.html' %}" class="Anslinks">Are there any thrift store shopping<br> dont's?</a>
+   </div>
+
+  </div>
+ </div>
+
+<!--blog part after search-->
+<section class="blog container">
+    <div clas= "row">
+        <div class ="post col-lg-8 col-md-8 col-12">
+            <div class="post1">
+                <img class ="img-fluid" sre="zew/foodpage.jpg">
+            </div>
+        </div>
+           <div class ="sidebar col-lg-8 col-md-8 col-12">
+            </div>
+    </div>
+</section>
+
+<!----blog part ends-->
+
+    <!---footer starts-->
+      <div class="footer-container">
+          <div class="footer">
+              <div class="footer-heading footer-1">
+                  <h2>About us</h2>
+                  <a href="{% static '#' %}">Blog</a>
+                  
+                  <a href="{% static '#' %}">customers</a>
+                 
+                  <a href="{% static '#' %}">terms of service</a>
+                  
+              </div>
+              
+            <div class="footer-heading footer-3">
+                <h2>Follow us on</h2>
+                <a href="{% static '#' %}" class="fa fa-facebook">  Facebook</a>  
+                <a href="{% static '#' %}" class="fa fa-instagram"> instagram</a>
+                <a href="{% static '#' %}" class="fa fa-twitter">    Twitter</a>
+                <a href="{% static '#' %}" class="fa fa-pinterest">   pinterest</a>  
+                <a href="{% static '#' %}" class="fa fa-linkedin">   linkedin</a>  
+                <a href="{% static '#' %}" class="fa fa-youtube">    youtube</a>  
+                <a href="{% static '#' %}" class="fa fa-google">    google</a>  
+                
+            </div>
+            <div class="footer-email-form">
+                <h3>Join our newsletter</h3>
+                <input type="email" placeholder="enter your email address" id="footer-email">
+                <input type="Submit" value="Signup" id="footer-email-btn">
+            </div>
+          </div>
+      </div>
+</body>
+</html>
