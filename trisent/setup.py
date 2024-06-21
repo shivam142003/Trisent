@@ -35,7 +35,4 @@ setup(
         "pytz==2024.1",
         # Add other dependencies here
     ],
-    extras_require={
-        'win32': ['pywin32==306'],
-    },
 )
