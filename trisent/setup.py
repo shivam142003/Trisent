@@ -1,0 +1,41 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="your_project_name",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[
+        "asgiref==3.8.1",
+        "asttokens==2.4.1",
+        "comm==0.2.0",
+        "debugpy==1.8.0",
+        "decorator==5.1.1",
+        "distlib==0.3.8",
+        "Django==4.1.7",
+        "django-widget-tweaks==1.5.0",
+        "executing==2.0.1",
+        "filelock==3.14.0",
+        "ipykernel==6.27.1",
+        "ipython==8.18.1",
+        "jedi==0.19.1",
+        "jupyter_client==8.6.0",
+        "jupyter_core==5.5.0",
+        "matplotlib-inline==0.1.6",
+        "nest-asyncio==1.5.8",
+        "packaging==23.2",
+        "parso==0.8.3",
+        "pbr==6.0.0",
+        "pillow==10.3.0",
+        "platformdirs==4.2.2",
+        "prompt-toolkit==3.0.41",
+        "psutil==5.9.6",
+        "pure-eval==0.2.2",
+        "Pygments==2.17.2",
+        "python-dateutil==2.8.2",
+        "pytz==2024.1",
+        # Add other dependencies here
+    ],
+    extras_require={
+        'win32': ['pywin32==306'],
+    },
+)
